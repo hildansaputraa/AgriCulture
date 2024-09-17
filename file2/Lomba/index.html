@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta data -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>SiLearn: Isyarat untuk Semua</title>
+
+  <!-- Material Design CSS -->
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      color: #4a90e2;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-top: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .detectOnClick img {
+      cursor: pointer;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .detectOnClick img:hover {
+      transform: scale(1.05);
+    }
+
+    #webcamButton {
+      margin: 20px auto;
+      display: block;
+      background-color: #4a90e2;
+      color: white;
+    }
+
+    .videoView {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    video,
+    canvas {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      background-color: #4a90e2;
+      color: white;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+
+  <!-- MediaPipe Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- Main Content -->
+  <h1>SiLearn: Isyarat untuk Semua</h1>
+  <h2>SignLearn adalah aplikasi inovatif yang dirancang untuk memfasilitasi pembelajaran bahasa isyarat guna mendukung inklusi pendidikan. Aplikasi ini menawarkan platform yang interaktif dan intuitif untuk membantu pengguna mempelajari bahasa isyarat dengan cara yang menyenangkan dan efektif, sekaligus mempromosikan kesadaran dan integrasi bagi individu dengan kebutuhan khusus dalam lingkungan pendidikan.</h2>
+
+  <div class="container">
+
+    <!-- Detecting Image Section -->
+    <section>
+      <h2>Demo: Detecting Images</h2>
+      <p><b>Click on an image below</b> to see the key landmarks of the hands.</p>
+
+      <div class="detectOnClick">
+        <img src="https://assets.codepen.io/9177687/hand-ge4ca13f5d_1920.jpg" width="100%" title="Click to get detection!" alt="Hand Image"/>
+      </div>
+
+      <div class="detectOnClick">
+        <img src="https://assets.codepen.io/9177687/couple-gb7cb5db4c_1920.jpg" width="100%" title="Click to get detection!" alt="Couple Image"/>
+      </div>
+    </section>
+
+    <!-- Webcam Detection Section -->
+    <section>
+      <h2>Demo: Webcam Continuous Hand Landmarks Detection</h2>
+      <p>Hold your hand in front of your webcam to get real-time hand landmark detection.<br>Click <b>Enable Webcam</b> below and grant access if prompted.</p>
+
+      <div id="liveView" class="videoView">
+        <button id="webcamButton" class="mdc-button mdc-button--raised">
+          <span class="mdc-button__ripple"></span>
+          <span class="mdc-button__label">Enable Webcam</span>
+        </button>
+        <div>
+          <video id="webcam" autoplay playsinline class="hidden"></video>
+          <canvas class="output_canvas" id="output_canvas"></canvas>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 SiLearn - Isyarat untuk Semua | Inklusi untuk Pendidikan</p>
+  </footer>
+
+  <!-- Custom Script for MediaPipe -->
+  <script>
+    // Your JavaScript code for MediaPipe integration goes here
+    const videoElement = document.getElementById('webcam');
+    const canvasElement = document.getElementById('output_canvas');
+    const canvasCtx = canvasElement.getContext('2d');
+
+    // Enable webcam functionality
+    const webcamButton = document.getElementById('webcamButton');
+    webcamButton.addEventListener('click', () => {
+      if (navigator.mediaDevices.getUserMedia) {
+        navigator.mediaDevices.getUserMedia({ video: true }).then((stream) => {
+          videoElement.srcObject = stream;
+          videoElement.classList.remove('hidden');
+        });
+      }
+    });
+
+    // Initialize MediaPipe Hands
+    const hands = new Hands({ locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}` });
+
+    hands.setOptions({
+      maxNumHands: 1,
+      modelComplexity: 1,
+      minDetectionConfidence: 0.7,
+      minTrackingConfidence: 0.7
+    });
+
+    hands.onResults((results) => {
+      canvasCtx.save();
+      canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
+      canvasCtx.drawImage(results.image, 0, 0, canvasElement.width, canvasElement.height);
+
+      if (results.multiHandLandmarks) {
+        for (const landmarks of results.multiHandLandmarks) {
+          drawConnectors(canvasCtx, landmarks, HAND_CONNECTIONS, { color: '#00FF00', lineWidth: 5 });
+          drawLandmarks(canvasCtx, landmarks, { color: '#FF0000', lineWidth: 2 });
+        }
+      }
+      canvasCtx.restore();
+    });
+
+    const camera = new Camera(videoElement, {
+      onFrame: async () => {
+        await hands.send({ image: videoElement });
+      },
+      width: 640,
+      height: 480
+    });
+    camera.start();
+  </script>
+
+</body>
+
+</html>
