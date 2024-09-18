@@ -14,14 +14,14 @@
           <!-- Cek apakah pengguna sudah login -->
           <?php if (!isset($_SESSION['role'])): ?>
             <!-- Jika belum login, tampilkan menu Home, About Us, Contact -->
-            <li><a href="/" class="active">Home</a></li>
+            <li><a href="index.php" class="active">Home</a></li>
             <li><a href="?page=about">About Us</a></li>
             <li><a href="?page=contact">Contact</a></li>
             <li><a href="login.php">Login</a></li>
           <?php else: ?>
             <!-- Jika sudah login, tampilkan menu sesuai role -->
              <?php if ($_SESSION['role'] == "Admin" || $_SESSION['role'] == "User"): ?>
-              <li><a href="?page=dashboard">Pembelajaran</a></li>
+              <li><a href="?page=service">Pembelajaran</a></li>
               <li class="dropdown"><a href="#"><span>Menu</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
             <li><a href="#">Profil</a></li>

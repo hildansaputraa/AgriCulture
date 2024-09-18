@@ -10,54 +10,19 @@
             <span class="sitename">AgriCulture</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>Depertemen Teknik Elektro</p>
+            <p>Fakultas Teknik, Gedung E1, Jl. Ketintang, Universitas Negeri Surabaya, Kec. Gayungan, Surabaya, Jawa Timur 60231</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+62 823 - 3445 - 4281</span></p>
+            <p><strong>Email:</strong> <span>muhammadhildan.22107@mhs.unesa.ac.id</span></p>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
-          <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
-          <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
+            <li><a href="?index">Home</a></li>
+            <li><a href="?page=about">About us</a></li>
+            <li><a href="?page=contact">Contact</a></li>
           </ul>
         </div>
 
@@ -70,7 +35,7 @@
 
       <div class="d-flex flex-column align-items-center align-items-lg-start">
         <div>
-          © Copyright <strong><span>MyWebsite</span></strong>. All Rights Reserved
+          © Copyright <strong><span>SignLearn Team</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
@@ -82,10 +47,9 @@
       </div>
 
       <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://wa.me/6282334454281"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.instagram.com/hildannnnnnn/"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/muhammad-hildan-027591217/"><i class="bi bi-linkedin"></i></a>
       </div>
 
     </div>

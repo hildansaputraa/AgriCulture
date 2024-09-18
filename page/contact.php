@@ -35,8 +35,8 @@
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h4>Location:</h4>
-                  <p>Fakultas Teknik Unesa
-                  Fakultas Teknik, Gedung E1, Jl. Ketintang, unesa, Kec. Gayungan, Surabaya, Jawa Timur 60231</p>
+                  <p>Fakultas Teknik Universitas Negeri Surabaya
+                  Fakultas Teknik, Gedung E1, Jl. Ketintang, Universitas Negeri Surabaya, Kec. Gayungan, Surabaya, Jawa Timur 60231</p>
                 </div>
               </div><!-- End Info Item -->
 
