@@ -20,7 +20,7 @@ if (!isset($_SESSION['username'])) {
           <div class="row g-0">
           
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
               <div class="service-item">
                 <span class="number">01</span>
                 <div class="service-item-icon">
@@ -36,7 +36,7 @@ if (!isset($_SESSION['username'])) {
             
             <!-- Repeat for other items -->
             <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link" >
+            <a href="?page=result" class="service-item-link" >
               <div class="service-item">
                 <span class="number">02</span>
                 <div class="service-item-icon">
@@ -52,7 +52,7 @@ if (!isset($_SESSION['username'])) {
 
             <!-- Add this CSS to all images -->
             <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
               <div class="service-item">
                 <span class="number">03</span>
                 <div class="service-item-icon">
@@ -67,7 +67,7 @@ if (!isset($_SESSION['username'])) {
             </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">04</span>
               <div class="service-item-icon">
@@ -82,7 +82,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">05</span>
               <div class="service-item-icon">
@@ -97,7 +97,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">06</span>
               <div class="service-item-icon">
@@ -112,7 +112,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">07</span>
               <div class="service-item-icon">
@@ -127,7 +127,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">08</span>
               <div class="service-item-icon">
@@ -142,7 +142,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">09</span>
               <div class="service-item-icon">
@@ -157,7 +157,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">10</span>
               <div class="service-item-icon">
@@ -172,7 +172,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">11</span>
               <div class="service-item-icon">
@@ -187,7 +187,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">12</span>
               <div class="service-item-icon">
@@ -202,7 +202,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">13</span>
               <div class="service-item-icon">
@@ -217,7 +217,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">14</span>
               <div class="service-item-icon">
@@ -232,7 +232,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">15</span>
               <div class="service-item-icon">
@@ -247,7 +247,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
           <div class="service-item">
               <span class="number">16</span>
               <div class="service-item-icon">
@@ -262,7 +262,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">17</span>
               <div class="service-item-icon">
@@ -277,7 +277,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">18</span>
               <div class="service-item-icon">
@@ -292,7 +292,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">19</span>
               <div class="service-item-icon">
@@ -307,7 +307,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">20</span>
               <div class="service-item-icon">
@@ -322,7 +322,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">21</span>
               <div class="service-item-icon">
@@ -337,7 +337,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">22</span>
               <div class="service-item-icon">
@@ -352,7 +352,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">23</span>
               <div class="service-item-icon">
@@ -367,7 +367,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">24</span>
               <div class="service-item-icon">
@@ -382,7 +382,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-            <a href="link-to-pageD.html" class="service-item-link">
+            <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">25</span>
               <div class="service-item-icon">
@@ -397,7 +397,7 @@ if (!isset($_SESSION['username'])) {
           </div>
 
           <div class="col-lg-3 col-md-6"> 
-           <a href="link-to-pageD.html" class="service-item-link">
+           <a href="?page=result" class="service-item-link">
             <div class="service-item">
               <span class="number">26</span>
               <div class="service-item-icon">

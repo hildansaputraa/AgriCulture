@@ -8,7 +8,6 @@ if (!isset($_SESSION['username'])) {
   }
 
 include "inc/header.php";
-include "inc/navbar.php";
 include "config/database.php";
 
 
@@ -40,7 +39,7 @@ include "inc/footer.php";
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-
+  
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
